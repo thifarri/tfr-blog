@@ -1,0 +1,18 @@
+baseURL = "https://tfrprojetos.com.br/blog/"
+languageCode = "pt-br"
+title = "TFR Projetos"
+theme = "PaperMod"
+
+[params]
+  description = "Dicas e artigos sobre engenharia elétrica"
+  homeInfoParams = {Title = "TFR Projetos — Blog", Content = "Artigos técnicos sobre engenharia elétrica residencial, comercial e industrial."}
+
+[[menus.main]]
+  name = "Blog"
+  url = "/blog/"
+  weight = 1
+
+[[menus.main]]
+  name = "Contato"
+  url = "https://tfrprojetos.com.br"
+  weight = 2

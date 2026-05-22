@@ -1,0 +1,20 @@
+backend:
+  name: github
+  repo: thifarri/tfr-blog
+  branch: main
+
+media_folder: static/images
+public_folder: /images
+
+collections:
+  - name: "posts"
+    label: "Posts"
+    folder: "content/posts"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Título", name: "title", widget: "string" }
+      - { label: "Data", name: "date", widget: "datetime" }
+      - { label: "Descrição", name: "description", widget: "string" }
+      - { label: "Tags", name: "tags", widget: "list" }
+      - { label: "Conteúdo", name: "body", widget: "markdown" }
