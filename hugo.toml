@@ -1,4 +1,6 @@
 baseURL = "https://tfrprojetos.com.br/blog/"
+canonifyURLs = true
+relativeURLs = false
 languageCode = "pt-br"
 title = "TFR Projetos"
 theme = "PaperMod"
@@ -8,8 +10,8 @@ theme = "PaperMod"
   homeInfoParams = {Title = "TFR Projetos — Blog", Content = "Artigos técnicos sobre engenharia elétrica residencial, comercial e industrial."}
 
 [[menus.main]]
-  name = "Blog"
-  url = "/blog/"
+  name = "Site"
+  url = "https://tfrprojetos.com.br/blog/"
   weight = 1
 
 [[menus.main]]
