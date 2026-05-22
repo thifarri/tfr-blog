@@ -1,20 +1,35 @@
 baseURL = "https://tfrprojetos.com.br/blog/"
-canonifyURLs = true
-relativeURLs = false
 languageCode = "pt-br"
-title = "TFR Projetos"
+title = "TFR Projetos — Blog"
 theme = "PaperMod"
 
+canonifyURLs = true
+relativeURLs = true
+
+[pagination]
+pagerSize = 10
+
 [params]
-  description = "Dicas e artigos sobre engenharia elétrica"
-  homeInfoParams = {Title = "TFR Projetos — Blog", Content = "Artigos técnicos sobre engenharia elétrica residencial, comercial e industrial."}
+defaultTheme = "dark"
+showReadingTime = true
+showShareButtons = true
+showPostNavLinks = true
+showBreadCrumbs = true
 
-[[menus.main]]
-  name = "Site"
-  url = "https://tfrprojetos.com.br/blog/"
-  weight = 1
+description = "Artigos técnicos sobre engenharia elétrica"
 
-[[menus.main]]
-  name = "Contato"
-  url = "https://tfrprojetos.com.br"
-  weight = 2
+[params.homeInfoParams]
+Title = "TFR Projetos — Blog"
+Content = "Artigos técnicos sobre engenharia elétrica residencial, comercial e industrial."
+
+[[menu.main]]
+identifier = "home"
+name = "Início"
+url = "/blog/"
+weight = 1
+
+[[menu.main]]
+identifier = "site"
+name = "Site"
+url = "https://tfrprojetos.com.br"
+weight = 2
